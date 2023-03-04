@@ -32,6 +32,14 @@ local plugins = {
         nvchad_ui.setup()
       end
     end,
+    override_options = {
+      tabufline = {
+        lazyload = false,
+        overriden_modules = function()
+          return require "custom.plugins.configs.ui"
+        end,
+      }
+    }
   },
 
   ["NvChad/nvterm"] = {
@@ -172,6 +180,7 @@ local plugins = {
   -- file managing , picker etc
   ["nvim-tree/nvim-tree.lua"] = {
     ft = "alpha",
+    tag = 'nightly',
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
     config = function()
       require "plugins.configs.nvimtree"
