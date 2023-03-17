@@ -40,15 +40,6 @@ return {
   },
 
   {
-    "tzachar/cmp-tabnine",
-    after = "nvim-cmp",
-    run = "./install.sh",
-    config = function()
-      require "custom.plugins.configs.tabnine"
-    end,
-  },
-
-  {
     "folke/todo-comments.nvim",
     lazy = false,
     config = function ()
@@ -64,6 +55,15 @@ return {
     config = function()
       require("trouble").setup {
 
+      }
+    end,
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+    configs = function()
+      require("copilot").setup{
       }
     end,
   }
