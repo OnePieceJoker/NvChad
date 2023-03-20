@@ -17,9 +17,8 @@ M.todocomments = {
 }
 
 M.copilot = {
-  -- FIXME: this is not working
   i = {
-    ["<C-J>"] = { 'copilot#Accept("")', "accept" },
+    ["<C-c>"] = { 'copilot#Accept("")', "accept", opts = { expr = true } },
   }
 }
 
