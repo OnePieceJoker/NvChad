@@ -18,7 +18,8 @@ M.todocomments = {
 
 M.copilot = {
   i = {
-    ["<C-c>"] = { 'copilot#Accept("")', "accept", opts = { expr = true } },
+    -- ["<C-c>"] = { 'copilot#Accept("")', "accept", opts = { expr = true } },
+    ["<C-c>"] = { 'codeium#Accept()', "accept", opts = { expr = true } },
   }
 }
 

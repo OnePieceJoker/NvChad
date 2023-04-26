@@ -61,11 +61,16 @@ return {
 
   {
     "github/copilot.vim",
-    lazy = false,
+    lazy = true,
     configs = function()
       require("copilot").setup{
       }
     end,
+  },
+
+  {
+    "Exafunction/codeium.vim",
+    lazy = false,
   }
 
 }
