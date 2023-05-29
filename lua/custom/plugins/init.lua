@@ -72,6 +72,11 @@ return {
   {
     "Exafunction/codeium.vim",
     lazy = false,
+  },
+
+  {
+    "preservim/tagbar",
+    lazy = false,
   }
 
 }

@@ -23,4 +23,10 @@ M.copilot = {
   }
 }
 
+M.tagbar = {
+  n = {
+    ["<C-t>"] = { "<cmd> TagbarToggle<CR>", "show tags" },
+  }
+}
+
 return M
