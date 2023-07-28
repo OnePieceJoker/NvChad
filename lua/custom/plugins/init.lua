@@ -82,6 +82,29 @@ return {
   {
     "preservim/tagbar",
     lazy = false,
+  },
+
+  {
+    "mfussenegger/nvim-dap",
+    lazy = false,
+  },
+
+  {
+    "rcarriga/nvim-dap-ui",
+    lazy = false,
+    config = function ()
+      require("dapui").setup()
+    end
+  },
+
+  {
+    "folke/neodev.nvim",
+    lazy = false,
+    config = function()
+      require("neodev").setup({
+        library = { plugins = { "nvim-dap-ui" }, types = true }
+      })
+    end,
   }
 
 }
